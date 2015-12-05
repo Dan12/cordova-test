@@ -1,11 +1,11 @@
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-}
+/** {*/
+    /*-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 
+/*}*/
 
 body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    /*-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    /*-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    /*-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     font-family: Arial, sans-serif;
     font-size:18px;
     height:100%;
@@ -17,20 +17,17 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    /*position:absolute;             /* position in the center of the screen 
-    /*left:50%;*/
-    /*top:50%;*/
     height:400px;                   /* text area height */
     width:300px;                   /* text area width */
     text-align:center;
-    margin: 0 auto;
-    /*padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    /*margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+    margin: 6px auto;
+    background-color: rgb(230,230,230);
+    padding: 4px 10px;
 }
 
 .ui-page:focus{
-    border: 1px solid rgba(0,0,0,0);
+    border: 1px solid rgba(0,0,0,0) ridge;
+    box-shadow: 0 0 0 0;
 }
 
 /* Landscape layout (with min-width) */
@@ -49,6 +46,10 @@ body {
 
 #a_button{
     cursor: pointer;
+}
+
+.ui-loader{
+    display: none;
 }
 
 .event.listening {
