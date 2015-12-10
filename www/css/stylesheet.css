@@ -61,3 +61,7 @@ body {
     padding:4px 10px;
     display: inline-block;
 }
+
+#myCanvas{
+    border: 1px solid gray;
+}

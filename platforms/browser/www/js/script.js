@@ -8,6 +8,12 @@ $(document).ready(function(){
          $(".received").css("display","inline-block");
       },2000);
    }
+   
+   var canvas = document.getElementById("myCanvas");
+   var ctx = canvas.getContext("2d");
+   
+   ctx.fillStyle = "red";
+   ctx.fillRect(10,10,30,30);
 });
 
-debug = true;
+debug = false;
